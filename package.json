@@ -19,12 +19,20 @@
     "express",
     "social",
     "media",
-    "app"
+    "app",
+    "apollo",
+    "mongoose",
+    "apollo-server"
   ],
   "author": "Isaac Hall",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/IsaacCDHall/ChattaLot/issues"
   },
-  "homepage": "https://github.com/IsaacCDHall/ChattaLot#readme"
+  "homepage": "https://github.com/IsaacCDHall/ChattaLot#readme",
+  "dependencies": {
+    "apollo-server": "^2.19.1",
+    "graphql": "^15.4.0",
+    "mongoose": "^5.11.11"
+  }
 }
