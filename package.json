@@ -1,0 +1,30 @@
+{
+  "name": "chattalot",
+  "version": "1.0.0",
+  "description": "Mern app with graphql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsaacCDHall/ChattaLot.git"
+  },
+  "keywords": [
+    "mern",
+    "graphql",
+    "mongodb",
+    "react",
+    "node",
+    "express",
+    "social",
+    "media",
+    "app"
+  ],
+  "author": "Isaac Hall",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IsaacCDHall/ChattaLot/issues"
+  },
+  "homepage": "https://github.com/IsaacCDHall/ChattaLot#readme"
+}
