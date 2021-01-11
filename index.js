@@ -1,41 +1,14 @@
 // DEPENDENCY IMPORTS
 const { ApolloServer } = require("apollo-server");
-// graphlql tag from apollo server
-const gql = require("graphql-tag");
 
 // RELATIVE IMPORTS
-const Post = require('./models/Post')
-const User = require('./models/User')
+const typeDefs = require('./graphql/typeDefs')
+const resolvers = require('./graphql/resolvers')
 //mongoose is the orm library to interface with mongoDB
 const mongoose = require("mongoose");
 
 const { MONGODB } = require("./config.js");
 
-const typeDefs = gql`
-    type Post{
-        id: ID!
-        body: String!
-        createdAt: String!
-        username: String!
-    }
-  type Query {
-    # sayHi: String!
-    getPosts: [Post]
-  }
-`;
-const resolvers = {
-  Query: {
-    // sayHi: () => "Hello, World",
-    async getPosts(){
-        try{
-            const posts = await Post.find();
-            return posts;
-        } catch(err){
-            throw new Error(err);
-        }
-    }
-  },
-};
 
 const server = new ApolloServer({
   typeDefs,
