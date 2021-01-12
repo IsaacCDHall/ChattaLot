@@ -10,3 +10,32 @@ module.exports = {
     "mongodb+srv:{mongo db connection here}"
 };
 ```
+
+inside of graphql playground at localhost:5000
+
+```
+mutation{
+  register(registerInput:{
+    username:"user",
+    password:"123456",
+    confirmPassword:"123456",
+    email: "user@email.com"
+    
+  }){
+    id
+    email
+    token
+    username
+    createdAt
+  }
+}
+```
+```
+query{
+  getPosts{
+    id,
+    body,
+    createdAt,
+    username
+  }
+```
